@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS 라이브러리 프로젝트</title>
+
+    <!--CSS-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="movie-detail-pro.css">
+
+  <!--JS-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+    integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+    crossorigin="anonymous"></script>
+
+  <!-- GSAP CDN -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+<!-- Swiper CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Chart.js CDN (데이터 시각화) -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" defer></script>
+</head>
+
+<body>
+   <!-- 내비게이션 바 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="movie-home-pro.html">🎥 <span>방구석</span> 영화관</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-page">
+              <a class="nav-link" href="movie-home-pro.html">검색</a>
+            </li>
+            <li class="nav-page">
+              <a class="nav-link" id="important" href="movie-detail-pro.html">영화</a>
+            </li>
+            <li class="nav-page">
+              <a class="nav-link" href="movie-introduce-pro.html">자기 소개</a>
+            </li>
+           </ul>
+           <ul class="navbar-nav ms-auto">
+              <li class="nav-page">
+                <a class="nav-intro" href="movie-introduce-pro.html">
+                  <img src="profile.jpeg"  alt="프로필">
+                </a>
+            </li>
+           </ul>
+        </div>
+    </div>
+  </nav>
+
+  <!-- 영화 설명 영역 -->
+  <div class="container-lg mt-5">
+    <div class="row g-4">
+      <!-- 포스터 -->
+      <div class="col-md-4">
+        <img id="moviePoster" src="profile.jpeg" alt="영화 포스터" class="img-fluid rounded shadow">
+      </div>
+
+      <!-- 정보 -->
+      <div class="col-md-8">
+        <h2 id="movieTitle"><span>제목</span></h2>
+        <p><strong>개봉일:</strong> <span id="movieDate">-</span></p>
+        <p><strong>영화 ID:</strong> <span id="movieId">-</span></p>
+        <p><strong>장르:</strong> <span id="movieGenre">-</span></p>
+        <p><strong>언어:</strong> <span id="movieLanguage">-</span></p>
+        <p><strong>성인영화 여부:</strong> <span id="movieAdult">-</span></p>
+        <p><strong>줄거리:</strong> <span id="movieOverview">-</span></p>
+        <p><strong>비디오 제공:</strong> <span id="movieVideo">-</span></p>
+        <p><strong>평균 평점:</strong> <span id="movieAverage">-</span></p>
+        <p><strong>투표 수:</strong> <span id="movieVote">-</span></p>
+        <a href="movie-home-pro.html" class="btn btn-outline-warning mt-3">← 영화 검색 창으로 돌아가기</a>
+      </div>
+    </div>
+  </div>
+
+     <!-- git hub -->
+<footer class="about mt-5 text-center">
+  <a href="https://github.com/" class="text-decoration-none d-block mb-1"><span>GitHub</span></a>
+  <a href="https://github.com/JikSae" class="text-decoration-none d-block"><span>Work Space</span></a>
+</footer>
+
+     <!-- JavaScript -->
+      <script src="movie-data-js"></script>
+      <script src="movie-detail-pro.js"></script>
+</body>
+</html>
