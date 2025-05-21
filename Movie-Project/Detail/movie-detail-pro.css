@@ -1,0 +1,80 @@
+body
+{
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  font-size: 1.25rem; /* 기본 글자 크기: 약 20px */
+}
+
+#important
+{
+  color: #fdc000 !important;
+  font-weight: bold;
+}
+
+/* 네비게이션 브랜드 글씨 크기 */
+.navbar-brand
+{
+  font-size: 25px;
+}
+
+/* 네비게이션 태그 글씨 크기 */
+nav
+{
+  font-size: 25px;
+  color: #fdc000;
+}
+
+/* 노랑색으로 강조할 부분 */
+span
+{
+  color: #fdc000;
+}
+
+/* 네비게이션바 우측 상단 이미지 */
+a > img
+{
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%;
+}
+
+
+#movieTitle {
+  color: #FFD700;
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem; /* 제목 아래 여백 추가 */
+}
+
+/* 영화 포스터 이미지 */
+#moviePoster
+{
+  border-radius: 15px;
+}
+
+/* about 부분 글씨 크기 */
+a
+{
+  font-size: 23px;
+}
+
+#movieDetail
+{
+  text-align: right;
+  font-style: bold;
+  font-size: 25px;
+}
+
+/* 2. 제목과 설명 사이 간격 추가 */
+#movieTitle {
+  color: #FFD700;
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem; /* 제목 아래 여백 추가 */
+} 
+
+/* 전체 설명 영역의 간격을 넉넉하게 */
+.col-md-8 {
+  padding-left: 1rem;
+}
