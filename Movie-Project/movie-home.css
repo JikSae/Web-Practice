@@ -1,0 +1,121 @@
+body
+{
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+/* 네비게이션 태그 강조 표시 */
+#important
+{
+  color: #fdc000 !important;
+  font-weight: bold;
+}
+
+/* 네비게이션 브랜드 글씨 크기 */
+.navbar-brand
+{
+  font-size: 25px;
+}
+
+/* 네비게이션 태그 글씨 크기 */
+nav
+{
+  font-size: 25px;
+}
+
+/* 노랑색으로 강조할 부분 */
+span
+{
+  color: #fdc000;
+}
+
+/* about 부분, github 부분 message 부분 글씨 크기 */
+a
+{
+  font-size: 23px;
+}
+
+/* 페이지 소개부분 글씨 크기 */
+.intro > h1
+{
+  font-size: 60px;
+}
+
+/* 검색창 부분 */
+.searchBar
+{
+  padding-left: 20px;
+  border-radius: 12px;
+  width: 1200px;
+  height: 50px;
+  background-color: #1c212e; 
+  color: white;
+  border: #1c212e;
+}
+
+/* 검색창 옆에 버튼 크기 */
+.searchBtn
+{
+  width: 90px;
+  height: 50px;
+}
+
+/* 검색결과 창 메세지 */
+.resultMessage {  
+  display: flex;
+  justify-content: center;   /* 수평 가운데 정렬 */
+  align-items: center;       /* 수직 가운데 정렬 */
+  font-size: 25px;
+  min-height: 100px;         /* 필요한 만큼의 기본 높이 */
+}
+
+
+/* 네비게이션바 우측 상단 이미지 */
+a > img
+{
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%;
+}
+
+.searchResult {
+  background-color: #1c212e;
+  padding: 20px;
+  border-radius: 12px;
+  min-height: 200px;
+  transition: all 0.3s ease;
+  overflow: visible; 
+  height: auto;       /* 고정 높이 제거 */
+}
+
+#movieResult {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+
+.card {
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-title {
+  cursor: default;
+}
