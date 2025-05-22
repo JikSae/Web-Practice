@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎥 방구석 영화관</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="movie-introduce.css">
+
+  <!--JS-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <!-- 내비게이션 바 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="movie-home.html">🎥 <span>방구석</span> 영화관</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-page">
+              <a class="nav-link" href="movie-home.html">검색</a>
+            </li>
+            <li class="nav-page">
+              <a class="nav-link"  href="movie-detail.html">영화</a>
+            </li>
+            <li class="nav-page">
+              <a class="nav-link" id="important" href="movie-introduce.html">자기 소개</a>
+            </li>
+           </ul>
+           <ul class="navbar-nav ms-auto">
+              <li class="nav-page">
+                <a class="nav-intro" href="movie-introduce.html">
+                  <img id="navProfile" src="profile.jpeg"  alt="프로필">
+                </a>
+            </li>
+           </ul>
+        </div>
+    </div>
+  </nav>
+
+<main class="container my-5">
+  <section id="intro" class="text-center mb-5">
+    <h1><span>TMI</span> 대방출 🤗</h1>
+  </section>
+
+  <!-- 좋아하는 음악 -->
+  <section id="music" class="mb-5">
+    <h2 class="text-warning">🎵 좋아하는 음악</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <p>WOODZ - Drowning</p>
+        <a href="https://www.youtube.com/watch?v=NbKH4iZqq1Y" target="_blank">
+          <img src="https://img.hankyung.com/photo/202304/2023042708522908223d3244b4fed182172185139.jpg" class="img-fluid rounded" alt="WOODZ">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <p>back number - Happy End</p>
+        <a href="https://www.youtube.com/watch?v=T8y_RsF4TSw" target="_blank">
+          <img src="https://image.bugsm.co.kr/album/images/500/6068/606871.jpg" class="img-fluid rounded" alt="back number">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <p>B.I - Cosmos</p>
+        <a href="https://www.youtube.com/watch?v=r9h4gRZAGv8" target="_blank">
+          <img src="https://i.scdn.co/image/ab67616d0000b273db8a8a1f32f05dbf4ec201fa" class="img-fluid rounded" alt="B.I">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MBTI -->
+  <section id="mbti" class="mb-5">
+    <h2 class="text-warning">🧠 MBTI</h2>
+    <p><span>ISFP</span> - 호기심 많은 예술가</p>
+    <ul id="mbtiList">
+      <li>따뜻하고 조용하지만 호기심이 많고 개방적입니다.</li>
+      <li>감정을 소중히 여기며 조화를 중시합니다.</li>
+      <li>자유로운 사고를 즐기며, 얽매이지 않고 자신의 방식으로 생각하고 행동하는 것을 좋아합니다. </li>
+    </ul>
+     <canvas id="mbtiChart" width="400" height="300"></canvas>
+  </section>
+
+  <!-- 취미 -->
+  <section id="hobby" class="mb-5">
+    <h2 class="text-warning">🖥️ 취미</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <p>🎮 게임</p>
+        <img src="https://cdn.gametoc.co.kr/news/photo/202309/75833_234553_4219.jpg" class="img-fluid rounded" alt="게임">
+      </div>
+      <div class="col-md-4">
+        <p>💪 운동</p>
+        <img src="https://blog.speak.com/wp-content/uploads/2022/08/%E1%84%92%E1%85%A6%E1%86%AF%E1%84%89%E1%85%B3%E1%84%8C%E1%85%A1%E1%86%BC-%E1%84%83%E1%85%A1%E1%84%82%E1%85%A7-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5%E1%84%85%E1%85%A9-930x620.jpg?crop=1" class="img-fluid rounded" alt="운동">
+      </div>
+      <div class="col-md-4">
+        <p>🛌 침대에 눕기</p>
+        <img src="https://health.chosun.com/site/data/img_dir/2023/05/18/2023051802117_0.jpg" class="img-fluid rounded" alt="휴식">
+      </div>
+    </div>
+  </section>
+
+  <!-- 인생 영화 -->
+  <section id="favorite-movie" class="mb-5">
+    <h2 class="text-warning">🎬 인생 영화</h2>
+    <div class="row text-center">
+      <div class="col-md-6">
+        <p>나는 내일, 어제의 너와 만난다</p>
+        <img src="https://i.namu.wiki/i/GZPda-0b0Cb-4jxFo8Y0Rp-jkd0Ti02bgaRk_Gdim8Eyh9pxtfy0YsBC2a9p0o1IvREsPKQ-IVEk7R2HkQojYw.webp" class="img-fluid rounded" alt="나는 내일, 어제의 너와 만난다">
+      </div>
+      <div class="col-md-6">
+        <p>남은 인생 10년</p>
+        <img src="https://i.namu.wiki/i/tMt-xEoxQskwtXEDco38nO-cbkxtpTdrQclxK5TBDVtkywBdp6z0wePfvy86DF1kd7mh4I0DizOL3aYaUOusbQ.webp" class="img-fluid rounded" alt="남은 인생 10년">
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="about mt-5 text-center">
+  <a href="https://github.com/JikSae/Web-Practice" class="text-decoration-none d-block mb-1"><span>GitHub</span></a>
+  <a href="https://github.com/JikSae" class="text-decoration-none d-block"><span>Work Space</span></a>
+</footer>
+
+<script src="movie-introduce.js"></script>
+</body>
+</html>
