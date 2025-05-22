@@ -19,6 +19,7 @@ document.querySelector(".searchBtn").addEventListener("click", function () {
     return;
   }
 
+
   if (keyword.length === 0) {
     movieResult.innerHTML = "<p class='text-center text-danger'> ❌ 영화 제목을 제대로 입력해주세요.</p>";
     return;
@@ -40,8 +41,8 @@ document.querySelector(".searchBtn").addEventListener("click", function () {
       </div>
     `;
     movieResult.appendChild(movieCard);
-    movieCard.querySelector('.card').addEventListener('click', (e) => {
-  const id = e.target.dataset.id;
+   movieCard.querySelector('.card').addEventListener('click', () => {
   window.location.href = `movie-detail.html?id=${movie.id}`;
+});
   });
-})});
+});
